@@ -1,26 +1,26 @@
-package application;
+package model;
 
 public class Kuglica {
+	private int broj;
+	private boolean clover;
+	
+	Kuglica(int broj){
+		this.broj = broj;
+		clover = false;
+		Database.getInstance().getKuglice().add(this);
+	}
 
-    int broj;
-    boolean bonus;
+	public boolean isClover() {
+		return clover;
+	}
 
-    public Kuglica(int broj){
+	public void setClover(boolean clover) {
+		this.clover = clover;
+	}
 
-
-    	this.broj=broj;
-    	if(broj==5 || broj==15 || broj==30){
-
-    		this.bonus=true;
-    	}
-    	else
-    		this.bonus=false;
-
-
-    }
-
-
-
-
-
+	public int getBroj() {
+		return broj;
+	}
+	
+	
 }
