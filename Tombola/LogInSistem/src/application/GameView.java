@@ -1,8 +1,12 @@
 package application;
 
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+
+import javax.swing.event.ChangeListener;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -56,6 +60,9 @@ public class GameView {
 
 		Label din=new Label("din");
 		din.setFont(Font.font("Verdana",FontWeight.BOLD,15));
+		
+		Label brojevi=new Label("Kombinacija brojeva");
+		
 
 		TextField zauplatu=new TextField();
 
@@ -154,7 +161,7 @@ public class GameView {
 
 		HBox boks3=new HBox();
 		boks3.setAlignment(Pos.CENTER);
-		boks3.setSpacing(200);
+		boks3.setSpacing(100);
 		boks3.getChildren().addAll(vertikala1,vertikala2);
 
 
@@ -168,16 +175,25 @@ public class GameView {
 
 		VBox glavni=new VBox();
 		glavni.setAlignment(Pos.TOP_CENTER);
-		glavni.setSpacing(200);
+		glavni.setSpacing(10);
 		glavni.setBackground(background);
 		glavni.getChildren().addAll(boks1,boks3);
+		glavni.isResizable();
+		
+		
 
 
 
-		Scene gamescena=new Scene(glavni,1000,1000);
+		
+		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+		int width = gd.getDisplayMode().getWidth();
+		int height = gd.getDisplayMode().getHeight();
+				
+		Scene gamescena=new Scene(glavni,1000,800);
 
 
 		gameStage.setScene(gamescena);
+		//gameStage.setResizable(true);
 		gameStage.show();
 
 
