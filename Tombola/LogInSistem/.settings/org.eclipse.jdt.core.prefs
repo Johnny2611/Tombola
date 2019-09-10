@@ -29,6 +29,7 @@ org.eclipse.jdt.core.compiler.problem.discouragedReference=warning
 org.eclipse.jdt.core.compiler.problem.emptyStatement=ignore
 org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+<<<<<<< HEAD
 org.eclipse.jdt.core.compiler.problem.explicitlyClosedAutoCloseable=ignore
 org.eclipse.jdt.core.compiler.problem.fallthroughCase=ignore
 org.eclipse.jdt.core.compiler.problem.fatalOptionalError=disabled
@@ -111,5 +112,7 @@ org.eclipse.jdt.core.compiler.problem.unusedPrivateMember=warning
 org.eclipse.jdt.core.compiler.problem.unusedTypeParameter=ignore
 org.eclipse.jdt.core.compiler.problem.unusedWarningToken=warning
 org.eclipse.jdt.core.compiler.problem.varargsArgumentNeedCast=warning
+=======
+>>>>>>> 6d616a67994ae0620d7939e4d40a869ccc3df781
 org.eclipse.jdt.core.compiler.release=disabled
 org.eclipse.jdt.core.compiler.source=1.8
