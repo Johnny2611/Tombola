@@ -1,4 +1,4 @@
-package application;
+package kontroler;
 
 public class RegisterControll {
 

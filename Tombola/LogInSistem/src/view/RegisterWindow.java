@@ -1,4 +1,4 @@
-package application;
+package view;
 
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -10,6 +10,7 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import kontroler.RegisterControll;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;

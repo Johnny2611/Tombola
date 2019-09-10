@@ -1,4 +1,4 @@
-package application;
+package view;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -34,6 +34,7 @@ import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
+import model.Kuglica;
 
 public class GameView {
 
@@ -62,6 +63,7 @@ public class GameView {
 		din.setFont(Font.font("Verdana",FontWeight.BOLD,15));
 		
 		Label brojevi=new Label("Kombinacija brojeva");
+		din.setFont(Font.font("Verdana",FontWeight.BOLD,15));
 		
 
 		TextField zauplatu=new TextField();
@@ -157,7 +159,7 @@ public class GameView {
 		VBox vertikala2=new VBox();
 		vertikala2.setAlignment(Pos.CENTER);
 		vertikala2.setSpacing(60);
-		vertikala2.getChildren().addAll(kombinacija,uplatiboks,odigraj);
+		vertikala2.getChildren().addAll(kombinacija,brojevi,uplatiboks,odigraj);
 
 		HBox boks3=new HBox();
 		boks3.setAlignment(Pos.CENTER);

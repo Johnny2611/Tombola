@@ -4,7 +4,7 @@ public class Kuglica {
 	private int broj;
 	private boolean clover;
 	
-	Kuglica(int broj){
+	public Kuglica(int broj){
 		this.broj = broj;
 		clover = false;
 		Database.getInstance().getKuglice().add(this);

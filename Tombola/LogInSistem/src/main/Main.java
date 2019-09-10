@@ -1,4 +1,4 @@
-package application;
+package main;
 
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -7,6 +7,7 @@ import javafx.scene.text.Text;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.stage.Stage;
+import view.MainView;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
