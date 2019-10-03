@@ -61,6 +61,8 @@ public class PlayView {
 		reelStage.setScene(scena);
 		reelStage.show();
 		
+		//Sisaj ga
+		
 		
 		
 		
