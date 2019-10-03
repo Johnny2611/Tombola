@@ -70,6 +70,13 @@ public class GameView {
 
 		Button odigraj=new Button("Odigraj");
 		odigraj.setPrefSize(120, 60);
+		odigraj.setPrefSize(120, 60);
+		odigraj.setOnAction(e->{
+			
+			PlayView p=new PlayView();
+			p.prikaziBrojeve();
+			
+		});
 
 		Button napravikomb=new Button("Napravi komb.");
 		napravikomb.setPrefSize(120, 50);
